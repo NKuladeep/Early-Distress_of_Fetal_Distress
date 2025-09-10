@@ -25,38 +25,46 @@ A **Flask web application** provides real-time predictions with a user-friendly 
 
 ## 🚀 Run Locally  
 
-Clone the project  
+### 1. Clone the project
+```bash
 git clone https://github.com/YOUR-USERNAME/fetal-health-prediction.git
 cd fetal-health-prediction
-Create a virtual environment
-
+2. Create a virtual environment
 bash
 Copy code
+# Linux / Mac
 python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-Install dependencies
-
-bash
-Copy code
+source venv/bin/activate  
+```
+# Windows
+```bash
+#linux/mac
+python -m venv venv
+venv\Scripts\activate
+```
+3. Install dependencies
+```bash
 pip install -r requirements.txt
-Run the app
-
-bash
-Copy code
+```
+4. Run the app
+```bash
 python app.py
-Visit http://127.0.0.1:5000/
-
+```
+5. Open in browser
+```cpp
+http://127.0.0.1:5000/
+```
 🖥️ Usage / Examples
+```
 Web Interface
 Input CTG parameters manually
 
-Or load demo data (Normal, Suspect, Pathological)
+Or load demo data (Normal / Suspect / Pathological)
 
 View prediction + probabilities instantly
-
-json
-Copy code
+```
+Example Output
+```json
 {
   "result": "Pathological",
   "probabilities": {
@@ -65,17 +73,9 @@ Copy code
     "Pathological": "84.1%"
   }
 }
+```
+
 ## 📊 Screenshots
-
-### Homepage
-![Homepage Screenshot](static/images/home.png)
-
-### Prediction Page
-![Prediction Screenshot](static/images/predict.png)
-
-### Confusion Matrix
-![Confusion Matrix](static/images/confusion_matrix.png)
-
 ### ROC Curves
 
 #### KNN Model
@@ -97,72 +97,88 @@ Copy code
 ![ROC Curve - Model Comparison](static/images/roc_curves_comparison.png)
 
 
-⚙️ Tech Stack
-Frontend: HTML, CSS, Bootstrap
-Backend: Flask
-ML Models: scikit-learn (Random Forest, Logistic Regression, KNN, SVM, Gradient Boosting)
-Deployment: Localhost / Future: AWS, Azure, Heroku
+⚙️ TECH STACK
 
-🔑 Environment Variables
-To run this project, you may need to set the following environment variables:
+```
+    Frontend: HTML, CSS, Bootstrap
+    Backend: Flask
+    ML Models: scikit-learn (Random Forest, Logistic Regression, KNN, SVM, Gradient Boosting)
+    Deployment: Localhost / Future: AWS, Azure, Heroku
+```
 
-FLASK_APP = app.py
-FLASK_ENV = development
+🔑 ENVIRONMENTAL VARIABLES
 
-🧪 Running Tests
-bash
-Copy code
-pytest tests/
-(Add test scripts in a tests/ folder.)
+    To run this project, you may need to set the following environment variables:
+```env
+   FLASK_APP = app.py
+   FLASK_ENV = development
+```
+🧪 RUNNING TESTS
 
-📈 Optimizations
-Applied GridSearchCV for hyperparameter tuning
+ ```bash
+   pytest tests/
+   #(Add test scripts in a tests/ folder.)
+```
 
-Balanced classes with class_weight=balanced
+📈 OPTIMIZATIONS
+```
+    Applied GridSearchCV for hyperparameter tuning
 
-Feature importance ranking with Random Forest
+   Balanced classes with class_weight=balanced
 
-🛠️ Roadmap
- Model training & evaluation
+   Feature importance ranking with Random Forest
+```
 
- Flask web app deployment
+🛠️ ROADMAP
+```
+   Model training & evaluation '/n'
 
- Cloud deployment (AWS/Heroku)
+   Flask web app deployment
 
- Real-time CTG data integration
+   Cloud deployment (AWS/Heroku)
+
+  Real-time CTG data integration
 
  Add deep learning models (LSTMs/Neural Networks)
+```
 
 🙋 FAQ
-Q: Can this system replace doctors?
+```
+Q: Can this system replace doctors?**
 A: No. It is a decision-support tool, not a replacement.
 
 Q: Which dataset is used?
 A: Public CTG dataset (UCI / Kaggle).
+```
 
-👨‍💻 Authors
+👨‍💻 AUTHORS
+
 @Nageti-Kuladeep – ML & Backend
 
 Team Members – Data preprocessing, Model training, UI
 
-🏅 Acknowledgements
+🏅 ACKNOWLEDGMENTS
+
 UCI Machine Learning Repository
 
 Kaggle for dataset hosting
 
 Journal of Engineering Sciences (Vol 16, Issue 05, 2025) for publication
 
-📄 License
+📄 LICENSE
+
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-💡 Lessons Learned
+💡 LESSONS LEARNED
+
 Importance of handling class imbalance in medical datasets
 
 Ensemble models (Random Forest, Gradient Boosting) perform best in healthcare ML
 
 Usability is critical for clinical adoption
 
-🤝 Contributing
+🤝 CONTRIBUTING
+```
 Contributions are welcome!
 
 Fork the repo
@@ -174,21 +190,13 @@ Commit changes (git commit -m "Added xyz")
 Push branch (git push origin feature/xyz)
 
 Open a Pull Request
+```
+❤️ SUPPORT
 
-📬 Feedback
-If you have any feedback, please reach out at your.email@example.com
-
-❤️ Support
 If you found this helpful:
 
 ⭐ Star this repo
 
-📝 Cite the published paper:
+📝 TEAM OF PUBLICATION :
+
 Uma Manasa T., Prasanthi K., Kuladeep N., et al. Early Detection of Fetal Distress Using ML Models, JES, 2025
-
-yaml
-Copy code
-
----
-
-👉 This README includes **all major sections** GitHub users often expect.
