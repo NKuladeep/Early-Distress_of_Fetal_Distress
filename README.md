@@ -26,8 +26,6 @@ A **Flask web application** provides real-time predictions with a user-friendly 
 ## 🚀 Run Locally  
 
 Clone the project  
-
-```bash
 git clone https://github.com/YOUR-USERNAME/fetal-health-prediction.git
 cd fetal-health-prediction
 Create a virtual environment
