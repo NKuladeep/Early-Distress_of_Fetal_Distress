@@ -81,7 +81,7 @@ Copy code
 ### ROC Curves
 
 #### KNN Model
-![ROC Curve - KNN](static/images/ctg_roc_curve_knn.png)
+![image alt](https://github.com/NKuladeep/Early-Distress_of_Fetal_Distress/blob/35e9618adaebf51a5520f87d5e87b718f9df9a5e/static/images/ctg_model_comparison.png)
 
 #### Logistic Regression
 ![ROC Curve - Logistic Regression](static/images/ctg_roc_curve_logistic_regression.png)
